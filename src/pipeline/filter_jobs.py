@@ -17,9 +17,9 @@ def main():
     print(f"Raw jobs: {len(raw_jobs)}")
     print(f"IT jobs: {len(it_jobs)}")
 
-    for job in it_jobs[:20]:
+    for idx, job in enumerate(it_jobs, start=1):
         print(
-            f"[{job.company}] "
+            f"{idx}.[{job.company}]"
             f"{job.title}"
         )
 
